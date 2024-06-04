@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import useDarkMode from '../hooks/useDarkMode'
+import userPhoto from '../../public/vite.svg'
 
 
 function Header() {
@@ -16,6 +17,9 @@ function Header() {
 
   return (
     <header>
+      <div className="user-photo">
+        <img src={userPhoto} />
+      </div>
       <div>
         {/* dark - light mode button */}
         {
