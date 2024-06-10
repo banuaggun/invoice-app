@@ -1,25 +1,14 @@
-
 .dark{
   background-color: #373b53;
   color: #fff;
 }
 
 .light{
-  background-color: aliceblue;
-  color:#000;
+  background-color: snow;
+  color:#373b53;
 }
 
-header{
-  width:100%;
-  height:80px;
-  display:flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 40px;
-  box-shadow: 0 2px 8px rgba(119, 136, 153, 0.4);
-}
-
-
+/*
 header button{
   width:36px;
   height:36px;
@@ -45,3 +34,34 @@ header button{
   background: #373b53;
   color:#fff;
 }
+
+.logo-area{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border:1px solid red;
+}
+
+.right-area{
+  width:10%;
+  border:1px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user-photo{
+  border:1px solid red;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.user-photo  img{
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  background-position: center;
+}
+
+*/

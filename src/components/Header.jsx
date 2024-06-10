@@ -1,6 +1,8 @@
 import {useState} from 'react'
 import useDarkMode from '../hooks/useDarkMode'
-import userPhoto from '../../public/vite.svg'
+import userPhoto from '../assets/user-photo-2.png'
+import logo from '../assets/react.svg'
+import '../header.css'
 
 
 function Header() {
@@ -17,19 +19,28 @@ function Header() {
 
   return (
     <header>
-      <div className="user-photo">
-        <img src={userPhoto} />
+      <div className="mobile-header">
+      <div className="mobile-header-logo">
+        <img src={logo} />
+        <h1>Invoice App</h1>
       </div>
-      <div>
+      <div className='mobile-header-right-area'>
         {/* dark - light mode button */}
         {
-            colorTheme === 'light' ? <button className='header-button-light' style={{width:'44px', height:'44px'}} onClick={toggleDarkMode}>
-              <i style={{color:'#000', fontSize:'24px'}} class="ph-fill ph-sun-dim"></i>
-            </button> : <button className='header-button-dark' style={{width:'44px', height:'44px'}} onClick={toggleDarkMode}>
-              <i style={{fontSize:'24px'}} class="ph-fill ph-moon-stars"></i>
+            colorTheme === 'light' ? <button className='mobile-header-button mobile-header-button-light' onClick={toggleDarkMode}>
+              <i style={{fontSize:'20px'}} className="ph-fill ph-sun-dim"></i>
+            </button> : <button className='mobile-header-button mobile-header-button-dark' onClick={toggleDarkMode}>
+              <i style={{fontSize:'20px'}} className="ph-fill ph-moon-stars"></i>
             </button>
           }
+
+<div className="user-photo">
+        <img src={userPhoto} />
       </div>
+      </div>
+      </div>
+     
+      
     </header>
   )
 }
