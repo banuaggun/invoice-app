@@ -37,6 +37,15 @@ header{
   width: 28px;
   height:28px;
   margin-right: 8px;
+}
+
+.tablet-sidebar-button{
+  width:36px;
+  height:36px;
+  margin-bottom:12px;
+}
+.mobile-header-button,
+.tablet-sidebar-button{
   border:none;
   outline:none;
   border-radius: 50%;
@@ -45,19 +54,72 @@ header{
   justify-content: center;
 }
 
-.mobile-header-button-light{
+.mobile-header-button-light, 
+.tablet-sidebar-button-light{
   background-color: orange;
   color:#373b53;
 }
 
-.mobile-header-button-dark{
+.mobile-header-button-dark, 
+.tablet-sidebar-button-dark{
   background-color: #373b53;
   color:#fff;
 }
 
 
-.user-photo img{
+.mobile-user-photo img{
   width:32px;
   height:32px;
   border-radius:50%;
+}
+
+.tablet-user-photo img{
+  width:36px;
+  height:36px;
+  border-radius:50%;
+}
+
+@media only screen and (min-width:300px) and (max-width:600px){
+  .mobile-header{
+    display:flex;
+  }
+  .tablet-sidebar{
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width:1921px){
+  .mobile-header{
+    display:none;
+  }
+  .tablet-sidebar{
+    display:flex;
+  }
+}
+
+.tablet-sidebar{
+  width:80px;
+  height:auto;
+  border:1px solid gray;
+  padding:20px 0;
+  position:absolute;
+  left:40px;
+  top:40px;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.tablet-sidebar-logo{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  margin-bottom:40px;
+}
+
+.tablet-sidebar-logo h1{
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size:28px;
 }
