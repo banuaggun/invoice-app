@@ -7,15 +7,25 @@ function MainArea() {
 
   console.log(invoices)
   return (
-    <div>
-      <div className="main-area-header">
-        <div>
+    <div className='main-area'>
+      <div className="main-area-mobile-header">
+        <div className='text'>
           <h2>Invoice</h2>
-          <p>There are {invoices.length} total invoices.</p>
+          <p>{invoices.length} invoices.</p>
         </div>
-        <div>
-          
+        <div className='buttons'>
+          <div className='buttons-filter'>
+            <button type='filter'>
+              Filter <i class="ph-bold ph-caret-down"></i>
+            </button>
+          </div>
+          <div className='buttons-new'>
+            <button type='button'>
+            <i class="ph-fill ph-plus-circle"></i> New
+          </button>
+          </div>
         </div>
+   
       </div>
     </div>
   )

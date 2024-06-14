@@ -5,63 +5,75 @@
 
 .light{
   background-color: snow;
-  color:#373b53;
+  color:#151515;
 }
 
-/*
-header button{
-  width:36px;
-  height:36px;
-  border-radius:20%;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  border:none;
-  outline:none;
-  color:white;
-}
-.header-button-light{
-  width:36px;
-  height:36px;
-  background: orange;
-  color:#373b53;
+h1, h2, h3, h4, h5, h6, p, span{
+  margin:0;
+  padding:0;
 }
 
-.header-button-dark{
-  width:36px;
-  height:36px;
-  background: #373b53;
-  color:#fff;
-}
-
-.logo-area{
-  display:flex;
-  align-items: center;
-  justify-content: center;
+.main-area{
   border:1px solid red;
+  margin:20px auto;
+  width:100%;
+  padding:0;
 }
 
-.right-area{
-  width:10%;
-  border:1px solid green;
+.main-area-mobile-header{
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  width:100%;
+  height:auto;
+  padding:0 20px;
+  border:1px solid blue;
 }
-.user-photo{
-  border:1px solid red;
-  border-radius:50%;
+
+
+.main-area-mobile-header .text h2{
+  font-size:20px;
+  margin-bottom:4px;
+}
+
+.main-area-mobile-header .text p{
+  font-size:14px;
+}
+
+.main-area-mobile-header .buttons{
+  display:flex;
+  align-items: center;
+}
+
+.main-area-mobile-header .buttons-filter button{
+  border:1px solid #bcdbbc;
+  outline:none;
+  margin-right:4px;
+  padding:6px 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  background-color:floralwhite;
   display:flex;
   align-items:center;
-  justify-content: center;
 }
 
-.user-photo  img{
-  width:44px;
-  height:44px;
-  border-radius:50%;
-  background-position: center;
+.main-area-mobile-header .buttons-filter button i{
+  margin-left:4px;
 }
 
-*/
+.main-area-mobile-header .buttons-new button i{
+  margin-right:2px;
+  font-size:24px;
+}
+
+.main-area-mobile-header .buttons-new button{
+  border:none;
+  outline: none;
+  padding: 4px 8px 4px 2px;
+  border-radius: 20px;
+  background-color:indigo;
+  color:#fff;
+  font-weight:600;
+  display: flex;
+  align-items: center;
+}
