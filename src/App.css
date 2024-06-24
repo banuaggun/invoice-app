@@ -13,11 +13,22 @@ h1, h2, h3, h4, h5, h6, p, span{
   padding:0;
 }
 
-.main-area{
+.main-area-mobile{
   border:1px solid red;
   margin:20px auto;
   width:100%;
+  height: auto;
   padding:0;
+}
+
+.main-area-tablet{
+  margin:40px 10px 0 10px;
+  width:calc(100% - 140px);
+}
+
+.main-area-web{
+  max-width:800px;
+  margin:40px auto;
 }
 
 .main-area-mobile-header{
@@ -66,6 +77,7 @@ h1, h2, h3, h4, h5, h6, p, span{
   font-size:24px;
 }
 
+
 .main-area-mobile-header .buttons-new button{
   border:none;
   outline: none;
@@ -76,4 +88,26 @@ h1, h2, h3, h4, h5, h6, p, span{
   font-weight:600;
   display: flex;
   align-items: center;
+}
+
+@media only screen and (min-width:300px) and (max-width:600px){
+  .main-area-mobile-header .buttons-new button span.button-text-1{
+    display:flex;
+  }
+  
+  .main-area-mobile-header .buttons-new button span.button-text-2{
+    display:none !important;
+  }
+  
+}
+
+@media only screen and (min-width:601px) and (max-width:1921px){
+  .main-area-mobile-header .buttons-new button span.button-text-1{
+    display:flex;
+    margin-right:4px;
+  }
+  
+  .main-area-mobile-header .buttons-new button span.button-text-2{
+    display:flex !important;
+  }
 }

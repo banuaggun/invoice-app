@@ -7,8 +7,8 @@ function MainArea() {
 
   console.log(invoices)
   return (
-    <div className='main-area'>
-      <div className="main-area-mobile-header">
+    <div className='main-area-mobile main-area-tablet main-area-web'>
+      <div className="main-area-mobile-header main-area-tablet-header">
         <div className='text'>
           <h2>Invoice</h2>
           <p>{invoices.length} invoices.</p>
@@ -16,12 +16,12 @@ function MainArea() {
         <div className='buttons'>
           <div className='buttons-filter'>
             <button type='filter'>
-              Filter <i class="ph-bold ph-caret-down"></i>
+              Filter <i className="ph-bold ph-caret-down"></i>
             </button>
           </div>
           <div className='buttons-new'>
             <button type='button'>
-            <i class="ph-fill ph-plus-circle"></i> New
+            <i className="ph-fill ph-plus-circle"></i> <span className='button-text-1'>New</span>  <span className='button-text-2'>Invoice</span>
           </button>
           </div>
         </div>
