@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import InvoiceCard from './InvoiceCard'
 
 function MainArea() {
 
@@ -26,6 +27,18 @@ function MainArea() {
           </div>
         </div>
    
+      </div>
+
+      <div className="main-area-content">
+        {
+          invoices.map((invoice, index) =>{
+            return(
+              <div>
+                <InvoiceCard invoice={invoice} />
+              </div>
+            )
+          })
+        }
       </div>
     </div>
   )
