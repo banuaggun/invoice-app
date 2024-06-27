@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import InvoiceCard from './InvoiceCard'
+import '../main-area.css'
 
 function MainArea() {
 

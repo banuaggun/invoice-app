@@ -1,0 +1,22 @@
+.main-area-web{
+  border:2px solid green;
+}
+
+.card-web-content{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(80px, auto);
+  align-items:center;
+  border:1px solid red;
+  margin-bottom:16px;
+  margin-top:4px;
+  padding:0 20px;
+}
+
+.card-web-content-id, 
+.card-web-content-due, 
+.card-web-content-client, 
+.card-web-content-total{
+  border:1px solid gray;
+}
