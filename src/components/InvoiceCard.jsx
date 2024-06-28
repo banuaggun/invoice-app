@@ -1,5 +1,6 @@
 import React from 'react'
 import '../main-area.css'
+import PaidStatus from './PaidStatus'
 
 
 function InvoiceCard({invoice}) {
@@ -20,7 +21,12 @@ function InvoiceCard({invoice}) {
           <div className="card-web-content-total">
             <p>€ {invoice.total}</p>
           </div>
-          
+          <div className="card-web-content-status">
+            <PaidStatus type={invoice.status} />
+          </div>
+          <div className="card-web-content-arrow">
+          <i className="ph-bold ph-caret-right"></i>
+          </div>
           
         </div>
       </div>

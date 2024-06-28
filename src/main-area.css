@@ -4,7 +4,7 @@
 
 .card-web-content{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 10px;
   grid-auto-rows: minmax(80px, auto);
   align-items:center;
@@ -19,4 +19,22 @@
 .card-web-content-client, 
 .card-web-content-total{
   border:1px solid gray;
+}
+
+.paid{
+  background-color:green;
+}
+
+.pending{
+  background-color:yellow;
+}
+
+.draft{
+  background-color: blue;
+}
+
+.status{
+  width:24px;
+  height:24px;
+  border-radius: 50%;
 }
