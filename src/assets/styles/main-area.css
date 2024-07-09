@@ -1,7 +1,11 @@
+.main-area-mobile{
+  width:100%;
+}
 .main-area-web{
   border:2px solid green;
 }
 
+/*
 .card-web-content{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -38,3 +42,4 @@
   height:24px;
   border-radius: 50%;
 }
+*/

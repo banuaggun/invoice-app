@@ -13,6 +13,8 @@ h1, h2, h3, h4, h5, h6, p, span{
   padding:0;
 }
 
+/*
+
 .main-area-mobile{
   border:1px solid red;
   margin:20px auto;
@@ -42,6 +44,7 @@ h1, h2, h3, h4, h5, h6, p, span{
 }
 
 
+/*
 .main-area-mobile-header .text h2{
   font-size:20px;
   margin-bottom:4px;
@@ -111,3 +114,4 @@ h1, h2, h3, h4, h5, h6, p, span{
     display:flex !important;
   }
 }
+*/

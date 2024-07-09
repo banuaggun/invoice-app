@@ -1,5 +1,4 @@
 import React from 'react'
-import '../main-area.css'
 import PaidStatus from './PaidStatus'
 
 
