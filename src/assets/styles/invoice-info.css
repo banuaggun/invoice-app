@@ -1,0 +1,31 @@
+.invoice-info{
+  width:100%;
+  height:auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px 20px;
+}
+
+.invoice-info-buttons{
+  display: flex;
+}
+
+.invoice-info-buttons-filter button{
+  margin-right:10px;
+}
+.invoice-info-buttons-filter button,
+.invoice-info-buttons-new button{
+  padding:6px 12px;
+  font-size:0.875rem;
+  font-weight:600;
+  white-space: nowrap;
+  border:none;
+  background: linear-gradient(to right, burlywood, rgba(212, 146, 157, 0.8));
+}
+
+.invoice-info-buttons-new button span.button-text-2{
+  display:none;
+}
+
+
