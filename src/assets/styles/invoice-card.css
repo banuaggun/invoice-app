@@ -1,0 +1,19 @@
+.card{
+  background-color: lightgreen;
+}
+
+.card-content{
+  display:flex;
+  align-items:center;
+  margin:10px auto;
+  padding:12px 6px;
+
+}
+
+.card-content-id h2{
+  font-size:0.875rem;
+}
+
+.card-content-due{
+  display:none;
+}
