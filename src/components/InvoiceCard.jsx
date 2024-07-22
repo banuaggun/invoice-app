@@ -18,7 +18,7 @@ function InvoiceCard({invoice}) {
             <p>{invoice.clientName}</p>
           </div>
           <div className="card-content-total">
-            <p>€ {invoice.total}</p>
+            <p>{invoice.total}€</p>
           </div>
           <div className="card-content-status">
             <PaidStatus type={invoice.status} />

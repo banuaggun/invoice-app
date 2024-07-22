@@ -3,17 +3,35 @@
 }
 
 .card-content{
+  max-width:300px;
   display:flex;
-  align-items:center;
+  justify-content: flex-start;
+  align-items: center;
   margin:10px auto;
-  padding:12px 6px;
-
+  padding:12px 6px 12px 6px;
+  font-size:0.875rem;
 }
 
 .card-content-id h2{
   font-size:0.875rem;
+  margin-right:4px;
 }
 
 .card-content-due{
   display:none;
+}
+
+.card-content-client{
+  display: flex;
+  justify-content: flex-start;
+  border:1px solid red;
+}
+
+.card-content-client p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border:1px solid black;
+  text-align: left;
+  margin-right:12px;
 }
