@@ -8,45 +8,30 @@ function InvoiceCard({invoice}) {
     <div>
       <table className="mobile-card">
         <tr>
-       <tr className='mobile-card-row-1'>
-         <td className='col-1'>
-          {invoice.id}
-         </td>
-         <td className='col-2'>{invoice.paymentDue}</td>
-       </tr>
-       <tr>
-         <td className='col-1'>{invoice.clientName}</td>
-         <td className='col-2'>{invoice.total}</td>
-       </tr>
-       <td className='col-3'>{invoice.status}
-       <i className="ph-bold ph-caret-right"></i>
-       </td>
-  
-       </tr>
+          <th rowSpan={2}>
+            {invoice.id}
+          </th>
+          <td>
+            {invoice.paymentDue} 
+          </td>
+          <td>
+            {invoice.status}
+          </td>
+          <th rowSpan={2}>
+            <i className="ph-bold ph-caret-right"></i>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            {invoice.clientName}
+          </td>
+          <td>
+            {invoice.total}
+          </td>
+        </tr>
+     
       </table>
-      <div className="card">
-        <div className="card-content">
-          <div className="card-content-id">
-            <h2>{invoice.id}</h2>
-          </div>
-          <div className="card-content-due">
-            <p>Due {invoice.paymentDue}</p>
-          </div>
-          <div className="card-content-client">
-            <p>{invoice.clientName}</p>
-          </div>
-          <div className="card-content-total">
-            <p>{invoice.total}€</p>
-          </div>
-          <div className="card-content-status">
-            <PaidStatus type={invoice.status} />
-          </div>
-          <div className="card-content-arrow">
-          <i className="ph-bold ph-caret-right"></i>
-          </div>
-          
-        </div>
-      </div>
+     
     </div>
   )
 }

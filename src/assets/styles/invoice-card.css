@@ -2,11 +2,14 @@
   font-size:0.875rem;
   width:100%;
 }
-
+table{
+  table-layout: fixed;
+}
 tr{
   background-color: lightcyan;
 }
 
+/*
 .mobile-card-row-1{
   padding:4px 0 2px 4px;
   color:red;
@@ -60,3 +63,4 @@ tr{
   border:1px solid black;
   text-align: left;
 }
+*/
