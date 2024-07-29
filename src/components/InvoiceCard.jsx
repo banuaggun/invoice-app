@@ -7,28 +7,31 @@ function InvoiceCard({invoice}) {
   return (
     <div>
       <table className="mobile-card">
-        <tr>
-          <th rowSpan={2}>
-            {invoice.id}
-          </th>
-          <td>
-            {invoice.paymentDue} 
-          </td>
-          <td>
-            {invoice.status}
-          </td>
-          <th rowSpan={2}>
-            <i className="ph-bold ph-caret-right"></i>
-          </th>
+        <tr className="mobile-card-row">
+          <tr>
+            <th rowSpan={2} className="mobile-card-id">
+              {invoice.id}
+            </th>
+            <td>
+              {invoice.paymentDue} 
+            </td>
+            <td className='column-3'>
+              {invoice.status}
+            </td>
+            <th rowSpan={2} className="mobile-card-arrow">
+              <i className="ph-bold ph-caret-right"></i>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              {invoice.clientName}
+            </td>
+            <td className='column-3'>
+              {invoice.total}
+            </td>
+          </tr>
         </tr>
-        <tr>
-          <td>
-            {invoice.clientName}
-          </td>
-          <td>
-            {invoice.total}
-          </td>
-        </tr>
+       
      
       </table>
      

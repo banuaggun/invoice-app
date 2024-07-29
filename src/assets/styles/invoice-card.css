@@ -1,12 +1,47 @@
 .mobile-card{
-  font-size:0.875rem;
-  width:100%;
+  font-size:1rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 table{
-  table-layout: fixed;
+  table-layout: auto;
+  margin:10px 20px;
+  width:calc(100% - 40px);
+  text-transform: capitalize;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  border-inline: 1px solid rgb(175, 92, 92) !important;
 }
-tr{
-  background-color: lightcyan;
+
+.mobile-card-row{
+  color:snow;
+  background-color: mediumorchid;
+}
+
+.mobile-card-row:hover{
+  background-color: darkorchid;
+}
+
+tr th.mobile-card-id{
+  width:25% !important;
+  padding:0 8px;
+  border:1px solid red;
+
+}
+
+tr th.mobile-card-arrow{
+  width:11%;
+}
+
+tr >td{
+  font-weight: 400;
+  width:32%;
+  padding:6px 6px 6px 0;
+  border:1px solid black;
+}
+
+.column-3{
+  width:80px;
 }
 
 /*
