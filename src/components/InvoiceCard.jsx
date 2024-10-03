@@ -12,7 +12,9 @@ function InvoiceCard({invoice}) {
         </div>
         <div className="row-2">
           <span>{invoice.paymentDue}</span>
-          <span>{invoice.status}</span>
+          <span>
+          <PaidStatus type={invoice.status} />
+          </span>
         </div>
         <div className="row-3">
           <span>{invoice.clientName}</span>
