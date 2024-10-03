@@ -6,7 +6,25 @@ import '../assets/styles/invoice-card.css'
 function InvoiceCard({invoice}) {
   return (
     <div>
-      <table className="mobile-card">
+      <div className="mobile-invoice-card">
+        <div className="row-1">
+          {invoice.id}
+        </div>
+        <div className="row-2">
+          <span>{invoice.paymentDue}</span>
+          <span>{invoice.status}</span>
+        </div>
+        <div className="row-3">
+          <span>{invoice.clientName}</span>
+          <span>{invoice.total} $</span>
+        </div>
+
+        <div className="right-button">
+        <i className="ph-bold ph-caret-circle-right"></i>
+        </div>
+      </div>
+    {/*
+          <table className="mobile-card">
         <tr className="mobile-card-row">
           <tr>
             <th rowSpan={2} className="mobile-card-id">
@@ -34,7 +52,7 @@ function InvoiceCard({invoice}) {
        
      
       </table>
-     
+  */}
     </div>
   )
 }
