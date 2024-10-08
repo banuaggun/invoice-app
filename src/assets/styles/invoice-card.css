@@ -36,16 +36,6 @@
   font-weight: bold;
 }
 
-.right-button{
-  display:flex;
-  align-items:center;
-  justify-content: flex-end;
-  position:absolute;
-  z-index:5;
-  top:40px;
-  right:2px;
-}
-
 .right-button i{
   font-size:2rem;
   color:darkolivegreen;
