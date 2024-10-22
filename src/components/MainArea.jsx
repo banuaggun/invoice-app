@@ -1,18 +1,20 @@
 import {useState} from 'react'
 import { useSelector } from 'react-redux'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import '../assets/styles/main-area.css'
-import Info from './info'
+//import Info from './info'
 import InvoiceCard from './InvoiceCard'
 import InvoiceInfo from './InvoiceInfo'
 
 
 function MainArea() {
+  const location=useLocation()
 
   const invoices = useSelector((state) => state.invoices.allInvoice)
 
-  console.log(invoices)
+  //console.log(invoices)
 
-  const [filteredInvoices, setFilteredInvoices] = useState(invoices);
+  //const [filteredInvoices, setFilteredInvoices] = useState(invoices);
 
   /*
   const handleFilterChange = (selectedValue) => {
@@ -39,25 +41,18 @@ function MainArea() {
   
   */
   return (
-    <div className='main-area main-area-mobile main-area-tablet main-area-web'>
-     <InvoiceInfo invoices={invoices} />
-
-     {/* 
-<Info invoices={invoices} handleFilterChange={handleFilterChange}/>
-  */}
-
+    <div className='main-area main-area-mobile'>
       <div className="main-area-content">
-        {
-          filteredInvoices.map((invoice, index) =>{
-            return(
-              <div key={index}>
-                <InvoiceCard invoice={invoice} />
-              </div>
-            )
-          })
-        }
+        {invoices.map((invoice) => (
+          <InvoiceCard key={invoice.id} invoice={invoice} />
+        ))}
       </div>
+      <Routes location={location} key={location.path}>
+        <Route element={<div>Select an invoice to view details</div>} path='/' />
+        <Route element={<InvoiceInfo/>} path='/invoice:invoiceId'/>
+      </Routes>
     </div>
+ 
   )
 }
 
